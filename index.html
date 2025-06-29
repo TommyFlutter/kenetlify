@@ -8,9 +8,29 @@
     <link rel="stylesheet" 
     href="assets/styles/style.css">
     <meta name="viewport" content="width=device-width,
- initial-scale=1">  
+ initial-scale=1"> 
+ <title>My First Map</title>
+ 
+    <!-- My Own -->
+    <link rel="stylesheet" href="styles/styles.css">
+ 
+    <!-- Leaflet -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    >
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+
 </head>
-   
+   <main>
+      <div id="map" class="map"></div>
+    </main>
 <body>
 
     <header>
@@ -21,8 +41,8 @@
 
 <nav>
     <ul>
-        <li><a href="#Program BIMBEL">Program BIMBEL</a></li>       
-        <li><a href="#Program KURSUS">Program KURSUS</a></li>
+        <li><a href="#Program BIMBEL">BIMBEL</a></li>       
+        <li><a href="#Program KURSUS">KURSUS</a></li>
         <li><a href="#Tentang Kami">Tentang Kami</a></li>
      </ul>
 </nav>
@@ -33,7 +53,10 @@
 
 <aside>
     <article class="profile">
+  
         <header >
+        <h2>Peta alamat Bimbel</h2>
+        <iframe width="300" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Ruko%20Mutiara%20Bekasi%20Jaya%20B2%20no.50%20kec%20cibarusah%20kab%20bekasi%20BEKASI+(Bimbel%20Scientists)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <a href='http://mapseinbinden.org'>google map einbinden</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=2e17c44acdc983275e841c37fc0487dc32b40723'></script>
         <h2>Tommy Azwar Muslim</h2>
     
         <figure>
@@ -46,21 +69,21 @@
         
         <section>
             Informasi Lainnya<br>
-            Lahir di Jakarta 061168<br>
             pekerjaan pengurus Bimbel Scientists
             
         </section>
-        
+      
+  
     </article>
 </aside>
 
-
+    
 <style>
         .carousel {
             position: relative;
             width: 800px;
             height: 500px;
-            margin: 10px auto;
+            margin: 100px auto;
             overflow: hidden;
         }
 
@@ -132,9 +155,11 @@
             images[currentImage].classList.add('active');
         }, 3000);
     </script>
-
+ 
 <article>
-   <section>
+
+
+<section>
     <h2 id="Program BIMBEL">Program BIMBEL</h2>
 <h2>1. Program Bimbel SD (4,5 & 6)</h2>
 <h2>2. Program Bimbel SMP</h2>
@@ -190,6 +215,8 @@ Misi : Menyelenggarakan Bimbingan Belajar<br></h3>
     </section>
 
 </article>
+
+
 
 <script src="Main.js">
 
